@@ -54,6 +54,17 @@ public class Cards {
             this.fullName = fullName;
         }
 
+        public String getRepresentation() {
+            return representation;
+        }
+
+        public int getValue() {
+            return value;
+        }
+
+        public String getFullName() {
+            return fullName;
+        }
     }
 
     public Cards(Card card , Suite suite) {
@@ -74,4 +85,11 @@ public class Cards {
         return stringRepresentation;
     }
 
+    public Card getCard() {
+        return card;
+    }
+
+    public Suite getSuite() {
+        return suite;
+    }
 }

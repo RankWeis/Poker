@@ -34,6 +34,14 @@ public class Hand {
         }
     }
 
+    public void clear() {
+        hand.clear();
+    }
+
+    public ArrayList<Cards> getCards() {
+        return this.hand;
+    }
+
     @Override
     public String toString() {
         StringBuilder[] deckStrArr = new StringBuilder[10];

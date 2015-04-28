@@ -10,7 +10,17 @@ public class Poker
 {
     public static void main( String[] args )
     {
+        long i = 0;
         TestGame testGame = new TestGame();
-        System.out.println( testGame.getHandText());
+        while(true) {
+            if(!testGame.draw()) {
+                testGame = new TestGame();
+                testGame.draw();
+            }
+            String text = testGame.getHandText();
+            System.out.println(text);
+            System.out.println(i++);
+
+        }
     }
 }
